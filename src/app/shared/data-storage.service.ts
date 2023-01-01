@@ -18,7 +18,7 @@ export class DataStorageService {
     const recipes = this.recipeService.getRecipes();
     this.http
       .put(
-        'https://ng-complete-guide-d6ac3-default-rtdb.europe-west1.firebasedatabase.app/recipes.json',
+        'https://course-project-46930-default-rtdb.europe-west1.firebasedatabase.app/recipes.json',
         recipes
       )
       .subscribe((response) => {
@@ -31,7 +31,7 @@ export class DataStorageService {
       take(1),
       exhaustMap((user) => {
         return this.http.get<Recipe[]>(
-          'https://ng-complete-guide-d6ac3-default-rtdb.europe-west1.firebasedatabase.app/recipes.json',
+          'https://course-project-46930-default-rtdb.europe-west1.firebasedatabase.app/recipes.json',
           {
             params: new HttpParams().set('auth', user.token),
           }
