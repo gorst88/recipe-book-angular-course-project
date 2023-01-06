@@ -1,16 +1,10 @@
 a {
   cursor: pointer;
-  display: inline-flex;
+  display: flex;
 }
 
 img {
   max-height: 100px;
   max-width: 100px;
   border: 1px solid;
-}
-
-div {
-}
-
-span {
 }

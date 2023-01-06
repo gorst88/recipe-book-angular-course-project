@@ -1,0 +1,13 @@
+{
+  "hosting": {
+    "site": "recipe-book-ver2",
+    "public": "dist/course-project",
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
